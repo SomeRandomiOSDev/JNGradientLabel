@@ -1,4 +1,4 @@
-![Gradient Label](Images/JNGradientLabel.png)
+![Gradient Label](https://github.com/SomeRandomiOSDev/JNGradientLabel/blob/master/Images/JNGradientLabel.png)
 
 # JNGradientLabel
 
@@ -92,16 +92,16 @@ OR
 ## Screenshots
 
 Foreground Axial Gradient:
-![Foreground Axial Gradient](Images/ForegroundAxial.png)
+![Foreground Axial Gradient](https://github.com/SomeRandomiOSDev/JNGradientLabel/blob/master/Images/ForegroundAxial.png)
 
 Foreground Radial Gradient:
-![Foreground Radial Gradient](Images/ForegroundRadial.png)
+![Foreground Radial Gradient](https://github.com/SomeRandomiOSDev/JNGradientLabel/blob/master/Images/ForegroundRadial.png)
 
 Background Axial Gradient:
-![Background Axial Gradient](Images/BackgroundAxial.png)
+![Background Axial Gradient](https://github.com/SomeRandomiOSDev/JNGradientLabel/blob/master/Images/BackgroundAxial.png)
 
 Background Radial Gradient:
-![Background Radial Gradient](Images/BackgroundRadial.png)
+![Background Radial Gradient](https://github.com/SomeRandomiOSDev/JNGradientLabel/blob/master/Images/BackgroundRadial.png)
 
 ## Author
 
