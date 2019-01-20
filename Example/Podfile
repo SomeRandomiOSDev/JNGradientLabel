@@ -1,0 +1,5 @@
+target 'JNGradientLabelExample' do
+  use_frameworks!
+  
+  pod 'JNGradientLabel', :path => '../'  
+end
