@@ -138,7 +138,7 @@ Background Radial Gradient:
 Contributing
 --------
 
-If you have need for a specific feature or you encounter a bug, please open an issue. If you extend the functionality of **JNGradientLabel** yourself or you feel like fixing a bug yoruself, please submit a pull request.
+If you have need for a specific feature or you encounter a bug, please open an issue. If you extend the functionality of **JNGradientLabel** yourself or you feel like fixing a bug yourself, please submit a pull request.
 
 Author
 --------
