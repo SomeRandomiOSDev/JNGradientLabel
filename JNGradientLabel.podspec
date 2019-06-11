@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   
   s.name         = "JNGradientLabel"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A `UILabel` subclass with a gradient color"
   s.description  = <<-DESC
                    An iOS Swift framework that that provides a `UILabel` subclass that renders its text with a gradient color
