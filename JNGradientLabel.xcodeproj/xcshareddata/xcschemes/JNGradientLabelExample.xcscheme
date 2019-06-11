@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+               BlueprintIdentifier = "DD647FAC22AFCA18003674C3"
                BuildableName = "JNGradientLabelExample.app"
                BlueprintName = "JNGradientLabelExample"
                ReferencedContainer = "container:JNGradientLabel.xcodeproj">
@@ -76,7 +76,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BlueprintIdentifier = "DD647FAC22AFCA18003674C3"
             BuildableName = "JNGradientLabelExample.app"
             BlueprintName = "JNGradientLabelExample"
             ReferencedContainer = "container:JNGradientLabel.xcodeproj">
@@ -99,7 +99,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BlueprintIdentifier = "DD647FAC22AFCA18003674C3"
             BuildableName = "JNGradientLabelExample.app"
             BlueprintName = "JNGradientLabelExample"
             ReferencedContainer = "container:JNGradientLabel.xcodeproj">
@@ -118,7 +118,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BlueprintIdentifier = "DD647FAC22AFCA18003674C3"
             BuildableName = "JNGradientLabelExample.app"
             BlueprintName = "JNGradientLabelExample"
             ReferencedContainer = "container:JNGradientLabel.xcodeproj">
