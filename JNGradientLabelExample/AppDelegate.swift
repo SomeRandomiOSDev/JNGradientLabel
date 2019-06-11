@@ -8,16 +8,16 @@
 
 import UIKit
 
-//MARK: - Class (AppDelegate) Definition
+// MARK: - Class (AppDelegate) Definition
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    //MARK: - Properties
+
+    // MARK: Properties
 
     var window: UIWindow?
-    
-    //MARK: - UIApplicationDelegate Protocol Requirements
+
+    // MARK: UIApplicationDelegate Protocol Requirements
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
