@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  JNGradientLabel
 //
-//  Created by Joseph Newton on 01/20/2019.
-//  Copyright (c) 2019 Joseph Newton. All rights reserved.
+//  Created by Joseph Newton on 01/20/2020.
+//  Copyright (c) 2020 Joseph Newton. All rights reserved.
 //
 
 import JNGradientLabel
