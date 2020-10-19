@@ -3,7 +3,7 @@
 //  JNGradientLabel
 //
 //  Created by Joseph Newton on 1/9/19.
-//  Copyright © 2019 Joseph Newton. All rights reserved.
+//  Copyright © 2020 Joseph Newton. All rights reserved.
 //
 
 import CoreGraphics
