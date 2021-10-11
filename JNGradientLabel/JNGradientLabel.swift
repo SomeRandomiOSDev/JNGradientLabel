@@ -91,7 +91,7 @@ open class JNGradientLabel: UILabel {
 
             case let .radial(startCenter, startRadius, endCenter, endRadius, radiiScalingRule):
                 var container = encoder.container(keyedBy: CodingKeys.self)
-                try container.encode(0, forKey: .type)
+                try container.encode(1, forKey: .type)
                 try container.encode(startCenter, forKey: .startPoint)
                 try container.encode(startRadius, forKey: .startRadius)
                 try container.encode(endCenter, forKey: .endPoint)
