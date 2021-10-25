@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19162" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JNGradientLabelExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label With Axial Gradient Text Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dp7-DN-uQN" customClass="JNGradientLabel" customModule="JNGradientLabel">
+                                <rect key="frame" x="744.5" y="430.5" width="431" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7N-rf-kQ8" userLabel="Spacer View">
+                                <rect key="frame" x="960" y="466.5" width="0.0" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label With Axial Gradient Background Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwC-i5-3Et" customClass="JNGradientLabel" customModule="JNGradientLabel">
+                                <rect key="frame" x="696.5" y="493.5" width="527" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zkR-It-TcC" userLabel="Spacer View">
+                                <rect key="frame" x="960" y="527.5" width="0.0" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="5eF-fJ-EwD"/>
+                                    <constraint firstAttribute="height" constant="25" id="IFy-9z-rVW"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label With Radial Gradient Text Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOt-2d-3i0" customClass="JNGradientLabel" customModule="JNGradientLabel">
+                                <rect key="frame" x="736.5" y="552.5" width="447" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eq9-8a-CdI" userLabel="Spacer View">
+                                <rect key="frame" x="960" y="586.5" width="0.0" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label With Radial Gradient Background Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yl-vV-bql" customClass="JNGradientLabel" customModule="JNGradientLabel">
+                                <rect key="frame" x="689" y="611.5" width="542" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Eq9-8a-CdI" firstAttribute="leading" secondItem="zkR-It-TcC" secondAttribute="leading" id="5Me-kg-PUg"/>
+                            <constraint firstItem="zkR-It-TcC" firstAttribute="top" secondItem="GwC-i5-3Et" secondAttribute="bottom" id="9sl-Hi-nIH"/>
+                            <constraint firstItem="5Yl-vV-bql" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HCp-8n-1wY"/>
+                            <constraint firstItem="zkR-It-TcC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LHr-vp-RSZ"/>
+                            <constraint firstItem="TOt-2d-3i0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M5b-tw-IO8"/>
+                            <constraint firstItem="Dp7-DN-uQN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nt6-dj-rW0"/>
+                            <constraint firstItem="GwC-i5-3Et" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OFF-0N-Qa9"/>
+                            <constraint firstItem="zkR-It-TcC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qrs-d9-BkX"/>
+                            <constraint firstItem="Y7N-rf-kQ8" firstAttribute="height" secondItem="zkR-It-TcC" secondAttribute="height" id="Uac-j4-PGw"/>
+                            <constraint firstItem="GwC-i5-3Et" firstAttribute="top" secondItem="Y7N-rf-kQ8" secondAttribute="bottom" constant="2" id="V4z-to-54Q"/>
+                            <constraint firstItem="5Yl-vV-bql" firstAttribute="top" secondItem="Eq9-8a-CdI" secondAttribute="bottom" id="kp9-be-AId"/>
+                            <constraint firstItem="Eq9-8a-CdI" firstAttribute="width" secondItem="zkR-It-TcC" secondAttribute="width" id="mhc-pk-8ps"/>
+                            <constraint firstItem="Eq9-8a-CdI" firstAttribute="height" secondItem="zkR-It-TcC" secondAttribute="height" id="msj-vd-4ia"/>
+                            <constraint firstItem="Y7N-rf-kQ8" firstAttribute="top" secondItem="Dp7-DN-uQN" secondAttribute="bottom" constant="2" id="ndf-Ae-oHZ"/>
+                            <constraint firstItem="TOt-2d-3i0" firstAttribute="top" secondItem="zkR-It-TcC" secondAttribute="bottom" id="qFm-iS-eto"/>
+                            <constraint firstItem="Eq9-8a-CdI" firstAttribute="top" secondItem="TOt-2d-3i0" secondAttribute="bottom" id="sRj-1m-hyF"/>
+                            <constraint firstItem="Y7N-rf-kQ8" firstAttribute="leading" secondItem="zkR-It-TcC" secondAttribute="leading" id="wEW-Cj-DX9"/>
+                            <constraint firstItem="Y7N-rf-kQ8" firstAttribute="width" secondItem="zkR-It-TcC" secondAttribute="width" id="x1y-1m-gLq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundAxialGradientLabel" destination="GwC-i5-3Et" id="Zty-rK-Dzj"/>
+                        <outlet property="backgroundRadialGradientLabel" destination="5Yl-vV-bql" id="mNJ-5l-06c"/>
+                        <outlet property="foregroundAxialGradientLabel" destination="Dp7-DN-uQN" id="e9A-J0-aW3"/>
+                        <outlet property="foregroundRadialGradientLabel" destination="TOt-2d-3i0" id="RIV-Y9-46k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="-5"/>
+        </scene>
+    </scenes>
+</document>

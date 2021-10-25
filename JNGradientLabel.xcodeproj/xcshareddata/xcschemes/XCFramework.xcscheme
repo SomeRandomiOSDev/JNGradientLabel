@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DD86D56423D11C4B0046E63E"
-               BuildableName = "Run SwiftLint"
-               BlueprintName = "Run SwiftLint"
+               BlueprintIdentifier = "DD2FBC27258BE8BB00DB3211"
+               BuildableName = "XCFramework"
+               BlueprintName = "XCFramework"
                ReferencedContainer = "container:JNGradientLabel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -31,7 +31,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DD86D56423D11C4B0046E63E"
-            BuildableName = "Run SwiftLint"
-            BlueprintName = "Run SwiftLint"
+            BlueprintIdentifier = "DD2FBC27258BE8BB00DB3211"
+            BuildableName = "XCFramework"
+            BlueprintName = "XCFramework"
             ReferencedContainer = "container:JNGradientLabel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

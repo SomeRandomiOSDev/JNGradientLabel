@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DD86D56423D11C4B0046E63E"
-               BuildableName = "Run SwiftLint"
-               BlueprintName = "Run SwiftLint"
+               BlueprintIdentifier = "DD7D541B2727459700E9D123"
+               BuildableName = "JNGradientLabel tvOS Example.app"
+               BlueprintName = "JNGradientLabel tvOS Example"
                ReferencedContainer = "container:JNGradientLabel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,6 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DD7D541B2727459700E9D123"
+            BuildableName = "JNGradientLabel tvOS Example.app"
+            BlueprintName = "JNGradientLabel tvOS Example"
+            ReferencedContainer = "container:JNGradientLabel.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,15 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DD86D56423D11C4B0046E63E"
-            BuildableName = "Run SwiftLint"
-            BlueprintName = "Run SwiftLint"
+            BlueprintIdentifier = "DD7D541B2727459700E9D123"
+            BuildableName = "JNGradientLabel tvOS Example.app"
+            BlueprintName = "JNGradientLabel tvOS Example"
             ReferencedContainer = "container:JNGradientLabel.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
