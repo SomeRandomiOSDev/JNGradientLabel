@@ -1,2 +1,6 @@
 JNGradientLabel.xcodeproj/project.xcworkspace
 JNGradientLabel.xcodeproj/xcuserdata
+
+.build
+.swiftpm
+scripts/build

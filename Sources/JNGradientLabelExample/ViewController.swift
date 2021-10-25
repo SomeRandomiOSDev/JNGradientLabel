@@ -1,15 +1,14 @@
 //
 //  ViewController.swift
-//  JNGradientLabel
+//  JNGradientLabelExample
 //
-//  Created by Joseph Newton on 01/20/2020.
-//  Copyright (c) 2020 Joseph Newton. All rights reserved.
+//  Copyright © 2021 SomeRandomiOSDev. All rights reserved.
 //
 
 import JNGradientLabel
 import UIKit
 
-// MARK: - Class (ViewController) Definition
+// MARK: - ViewController Definition
 
 class ViewController: UIViewController {
 

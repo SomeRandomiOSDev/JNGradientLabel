@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1300"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DD647FAC22AFCA18003674C3"
+               BlueprintIdentifier = "DD7D53ED27272FA200E9D123"
                BuildableName = "JNGradientLabelExample.app"
                BlueprintName = "JNGradientLabelExample"
-               ReferencedContainer = "container:JNGradientLabel.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "JNGradientLabelTests.xctest"
-               BlueprintName = "JNGradientLabelTests"
                ReferencedContainer = "container:JNGradientLabel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,48 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "JNGradientLabelTests.xctest"
-               BlueprintName = "JNGradientLabelTests"
-               ReferencedContainer = "container:JNGradientLabel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DD43802A21F50AB7006DDAD5"
-               BuildableName = "JNGradientLabelExampleUITests.xctest"
-               BlueprintName = "JNGradientLabelExampleUITests"
-               ReferencedContainer = "container:JNGradientLabel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DD43803821F50AD4006DDAD5"
-               BuildableName = "JNGradientLabelUITests.xctest"
-               BlueprintName = "JNGradientLabelUITests"
-               ReferencedContainer = "container:JNGradientLabel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DD647FAC22AFCA18003674C3"
-            BuildableName = "JNGradientLabelExample.app"
-            BlueprintName = "JNGradientLabelExample"
-            ReferencedContainer = "container:JNGradientLabel.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -99,14 +44,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DD647FAC22AFCA18003674C3"
+            BlueprintIdentifier = "DD7D53ED27272FA200E9D123"
             BuildableName = "JNGradientLabelExample.app"
             BlueprintName = "JNGradientLabelExample"
             ReferencedContainer = "container:JNGradientLabel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -118,7 +61,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DD647FAC22AFCA18003674C3"
+            BlueprintIdentifier = "DD7D53ED27272FA200E9D123"
             BuildableName = "JNGradientLabelExample.app"
             BlueprintName = "JNGradientLabelExample"
             ReferencedContainer = "container:JNGradientLabel.xcodeproj">

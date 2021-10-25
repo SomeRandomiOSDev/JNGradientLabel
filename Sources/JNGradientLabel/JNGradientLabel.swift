@@ -2,14 +2,15 @@
 //  JNGradientLabel.swift
 //  JNGradientLabel
 //
-//  Created by Joseph Newton on 1/9/19.
-//  Copyright © 2020 Joseph Newton. All rights reserved.
+//  Copyright © 2021 SomeRandomiOSDev. All rights reserved.
 //
 
 import CoreGraphics
 import UIKit
 
-// MARK: - Enum (TextGradientLocation) Definition
+// swiftlint:disable discouraged_optional_collection
+
+// MARK: - TextGradientLocation Definition
 
 /// An enum that describes how a gradient should be drawn in relation to the text
 @objc public enum TextGradientLocation: Int {
@@ -27,7 +28,7 @@ import UIKit
     fileprivate static let `default` = TextGradientLocation.foreground
 }
 
-// MARK: - Enum (RadialGradientRadiiScalingRule) Definition
+// MARK: - RadialGradientRadiiScalingRule Definition
 
 /// An enum that describes how the radial gradient radius should be scaled when drawing
 @objc public enum RadialGradientRadiiScalingRule: Int {
@@ -46,12 +47,13 @@ import UIKit
     /// When scaling, the radial gradient radius should be multiplied by the larger of the width and the height of the label. `scaledRadius = radius * max(width, height)`
     case maximumBound = 3
 
-    // MARK: Private Constants
+    // MARK: Public Constants
 
-    fileprivate static let `default` = RadialGradientRadiiScalingRule.maximumBound
+    /// Same as `.maximumBound`
+    public static let `default` = RadialGradientRadiiScalingRule.maximumBound
 }
 
-// MARK: - Class (JNGradientLabel) Definition
+// MARK: - JNGradientLabel Definition
 
 open class JNGradientLabel: UILabel {
 
@@ -66,6 +68,7 @@ open class JNGradientLabel: UILabel {
 
         // MARK: Private Types
 
+        // swiftlint:disable nesting
         private enum CodingKeys: String, CodingKey {
 
             // Axial/Radial
@@ -78,6 +81,7 @@ open class JNGradientLabel: UILabel {
             case endRadius
             case radiiScalingRule
         }
+        // swiftlint:enable nesting
 
         // MARK: Encodable Protcol Requirements
 
@@ -134,10 +138,6 @@ open class JNGradientLabel: UILabel {
         case textGradientLocation
     }
 
-    // MARK: Private Constants
-
-    private static let defaultGradientDrawingOptions = CGGradientDrawingOptions(rawValue: 0)
-
     // MARK: Private Properties
 
     private var gradientType: GradientType?
@@ -146,7 +146,7 @@ open class JNGradientLabel: UILabel {
     // MARK: Public Properties
 
     /// The colors to be used when drawing the gradient
-    @objc open var gradientColors: [UIColor]? = nil {
+    @objc open var gradientColors: [UIColor]? {
         didSet {
             if oldValue != gradientColors {
                 super.setNeedsDisplay()
@@ -155,7 +155,7 @@ open class JNGradientLabel: UILabel {
     }
 
     /// The locations of the gradient colors specified in 'gradientColors'
-    @objc open var gradientLocations: [NSNumber]? = nil {
+    @objc open var gradientLocations: [NSNumber]? {
         didSet {
             if oldValue != gradientLocations {
                 super.setNeedsDisplay()
@@ -164,7 +164,7 @@ open class JNGradientLabel: UILabel {
     }
 
     /// The drawing options used when drawing the gradient
-    @objc open var gradientOptions: CGGradientDrawingOptions = JNGradientLabel.defaultGradientDrawingOptions {
+    @objc open var gradientOptions: CGGradientDrawingOptions = [] {
         didSet {
             if oldValue != gradientOptions {
                 super.setNeedsDisplay()
@@ -230,7 +230,7 @@ open class JNGradientLabel: UILabel {
     /// - parameter colors: The colors of the gradient
     /// - parameter locations: The locations of the gradient colors
     /// - parameter options: The gradient drawing options.
-    @objc open func setAxialGradientParameters(startPoint: CGPoint, endPoint: CGPoint, colors: [UIColor]? = nil, locations: [NSNumber]? = nil, options: CGGradientDrawingOptions) {
+    @objc open func setAxialGradientParameters(startPoint: CGPoint, endPoint: CGPoint, colors: [UIColor]? = nil, locations: [NSNumber]? = nil, options: CGGradientDrawingOptions = []) {
         gradientOptions = options
         gradientType    = .axial(startPoint: startPoint.clamped(min: 0.0, max: 1.0),
                                  endPoint: endPoint.clamped(min: 0.0, max: 1.0))
@@ -248,15 +248,14 @@ open class JNGradientLabel: UILabel {
     /// - parameter colors: The colors of the gradient
     /// - parameter locations: The locations of the gradient colors
     /// - parameter options: The gradient drawing options. If unspecified, this defaults to a null option set
-    @nonobjc open func setAxialGradientParameters(startPoint: CGPoint, endPoint: CGPoint, colors: [UIColor]? = nil, locations: [CGFloat]? = nil, options: CGGradientDrawingOptions? = nil) {
+    @nonobjc open func setAxialGradientParameters(startPoint: CGPoint, endPoint: CGPoint, colors: [UIColor]? = nil, locations: [CGFloat]? = nil, options: CGGradientDrawingOptions = []) {
         setAxialGradientParameters(startPoint: startPoint,
                                    endPoint: endPoint,
                                    colors: colors,
                                    locations: locations?.map { NSNumber(value: Double($0)) },
-                                   options: options ?? JNGradientLabel.defaultGradientDrawingOptions)
+                                   options: options)
     }
 
-    // swiftlint:disable function_parameter_count
     /// Sets the gradient type to `radial` and sets the start and end cneter points, the start and end radii, and optionally the gradient colors and locations.
     ///
     /// - parameter startCenter: The start center of the gradient with (0.0, 0.0) and (1.0, 1.0) representing the top-left and bottom-right corners of the label, respectively. Points whose coordinates lie outside of this range will be clamped
@@ -273,8 +272,8 @@ open class JNGradientLabel: UILabel {
                                                 endRadius: CGFloat,
                                                 colors: [UIColor]? = nil,
                                                 locations: [NSNumber]? = nil,
-                                                radiiScalingRule: RadialGradientRadiiScalingRule,
-                                                options: CGGradientDrawingOptions) {
+                                                radiiScalingRule: RadialGradientRadiiScalingRule = .default,
+                                                options: CGGradientDrawingOptions = []) {
         gradientOptions = options
         gradientType    = .radial(startCenter: startCenter.clamped(min: 0.0, max: 1.0),
                                   startRadius: startRadius,
@@ -287,7 +286,6 @@ open class JNGradientLabel: UILabel {
 
         super.setNeedsDisplay()
     }
-    // swiftlint:enable function_parameter_count
 
     /// Sets the gradient type to `radial` and sets the start and end cneter points, the start and end radii, and optionally the gradient colors and locations.
     ///
@@ -305,23 +303,23 @@ open class JNGradientLabel: UILabel {
                                                    endRadius: CGFloat,
                                                    colors: [UIColor]? = nil,
                                                    locations: [CGFloat]? = nil,
-                                                   radiiScalingRule: RadialGradientRadiiScalingRule? = nil,
-                                                   options: CGGradientDrawingOptions? = nil) {
+                                                   radiiScalingRule: RadialGradientRadiiScalingRule = .default,
+                                                   options: CGGradientDrawingOptions = []) {
         setRadialGradientParameters(startCenter: startCenter,
                                     startRadius: startRadius,
                                     endCenter: endCenter,
                                     endRadius: endRadius,
                                     colors: colors,
                                     locations: locations?.map { NSNumber(value: Double($0)) },
-                                    radiiScalingRule: radiiScalingRule ?? .default,
-                                    options: options ?? JNGradientLabel.defaultGradientDrawingOptions)
+                                    radiiScalingRule: radiiScalingRule,
+                                    options: options)
     }
 
     @objc open func clearGradientParameters() {
         gradientType = nil
         gradientColors = nil
         gradientLocations = nil
-        gradientOptions = JNGradientLabel.defaultGradientDrawingOptions
+        gradientOptions = []
 
         super.setNeedsDisplay()
     }
@@ -350,7 +348,7 @@ open class JNGradientLabel: UILabel {
                 self.layer.backgroundColor = backgroundColor
             }
 
-            if #available(iOS 10.0, *) {
+            if #available(iOS 10.0, tvOS 10.0, *) {
                 textImage = UIGraphicsImageRenderer(size: size).image { _ in drawText() }
             } else {
                 UIGraphicsBeginImageContext(size)
@@ -408,7 +406,7 @@ open class JNGradientLabel: UILabel {
     }
 }
 
-// MARK: - Struct (CGPoint) Extension
+// MARK: - CGPoint Extension
 
 extension CGPoint {
 

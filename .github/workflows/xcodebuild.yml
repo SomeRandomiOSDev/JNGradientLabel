@@ -1,0 +1,47 @@
+name: Xcode Project
+on: [push, workflow_dispatch]
+
+jobs:
+  ios:
+    name: iOS
+    runs-on: macOS-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Build iOS
+      run: |
+        xcodebuild -project JNGradientLabel.xcodeproj -scheme "JNGradientLabel" -destination "generic/platform=iOS" -configuration Debug
+
+    - name: Build iOS Simulator
+      run: |
+        xcodebuild -project JNGradientLabel.xcodeproj -scheme "JNGradientLabel" -destination "generic/platform=iOS Simulator" -configuration Debug
+
+  maccatalyst:
+    name: Mac Catalyst
+    runs-on: macOS-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Build
+      run: |
+        xcodebuild -project JNGradientLabel.xcodeproj -scheme "JNGradientLabel" -destination "generic/platform=macOS,variant=Mac Catalyst" -configuration Debug
+
+  tvos:
+    name: tvOS
+    runs-on: macOS-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Build tvOS
+      run: |
+        xcodebuild -project JNGradientLabel.xcodeproj -scheme "JNGradientLabel tvOS" -destination "generic/platform=tvOS" -configuration Debug
+
+    - name: Build tvOS Simulator
+      run: |
+        xcodebuild -project JNGradientLabel.xcodeproj -scheme "JNGradientLabel tvOS" -destination "generic/platform=tvOS Simulator" -configuration Debug
